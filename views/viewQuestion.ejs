@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Question</title>
+</head>
+<body>
+    <h1>View Question</h1>
+    <h2><%= question.title %></h2>
+    <ul>
+        <% question.options.forEach(function(option) { %>
+            <li>
+                <%= option.text %> - <%= option.votes %> votes
+                <form action="/options/<%= option._id %>/add_vote" method="post">
+                    <button type="submit">Vote</button>
+                </form>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>

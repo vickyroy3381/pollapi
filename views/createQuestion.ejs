@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create a Question</title>
+</head>
+<body>
+    <h1>Create a Question</h1>
+    <form action="/questions/create" method="post">
+        <label for="title">Question:</label>
+        <input type="text" id="title" name="title" required>
+        <br>
+        <label for="options">Options (one per line):</label>
+        <textarea id="options" name="options" required></textarea>
+        <br>
+        <button type="submit">Create Question</button>
+    </form>
+</body>
+</html>
