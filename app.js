@@ -6,7 +6,7 @@ const ejs = require('ejs');
 const app = express();
 
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/nodeproject', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://vickyjsauth:PZxeE0vvWdbZn9fw@mymongodb.mecwaj1.mongodb.net/mymongodb?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Set up EJS as the view engine
 app.set('view engine', 'ejs');
